@@ -13,38 +13,36 @@
       background-color: #f9fafb;
       color: #111827;
     }
-
-    /* Layout */
+    
     .min-h-screen {
       min-height: 100vh;
     }
-
+    
     .flex {
       display: flex;
     }
-
+    
     .items-center {
       align-items: center;
     }
-
+    
     .justify-center {
       justify-content: center;
     }
-
+    
     .max-w-2xl {
       max-width: 42rem;
     }
-
+    
     .w-full {
       width: 100%;
     }
-
+    
     .mx-auto {
       margin-left: auto;
       margin-right: auto;
     }
-
-    /* Componentes */
+    
     .card {
       background: white;
       border-radius: 0.5rem;
@@ -52,7 +50,7 @@
       padding: 2rem;
       margin-bottom: 1rem;
     }
-
+    
     .button {
       display: inline-flex;
       align-items: center;
@@ -64,28 +62,27 @@
       cursor: pointer;
       border: 1px solid transparent;
     }
-
+    
     .button-default {
       background-color: #3b82f6;
       color: white;
     }
-
+    
     .button-default:hover {
       background-color: #2563eb;
     }
-
+    
     .button-outline {
       background-color: transparent;
       color: #374151;
       border-color: #d1d5db;
     }
-
+    
     .button-outline:hover {
       background-color: #f3f4f6;
       border-color: #9ca3af;
     }
-
-    /* Progress bar */
+    
     .progress {
       width: 100%;
       height: 0.5rem;
@@ -93,190 +90,101 @@
       border-radius: 0.25rem;
       overflow: hidden;
     }
-
+    
     .progress-bar {
       height: 100%;
       background-color: #3b82f6;
       transition: width 0.5s ease;
     }
-
-    /* Result bars */
+    
     .result-bar-container {
       height: 1rem;
       background-color: #e5e7eb;
       border-radius: 0.5rem;
       overflow: hidden;
+      margin: 0.5rem 0;
     }
-
+    
     .result-bar {
       height: 100%;
       transition: width 0.5s ease;
     }
-
-    /* Tipografía */
+    
+    .bg-blue-500 {
+      background-color: #3b82f6;
+    }
+    
+    .bg-green-500 {
+      background-color: #10b981;
+    }
+    
     .font-title {
       font-weight: 800;
     }
-
+    
     .font-body {
       font-weight: 400;
     }
-
+    
     .text-center {
       text-align: center;
     }
-
-    /* Espaciado */
+    
     .space-y-4 > * + * {
       margin-top: 1rem;
     }
-
+    
     .space-y-6 > * + * {
       margin-top: 1.5rem;
     }
-
+    
     .space-y-8 > * + * {
       margin-top: 2rem;
     }
-
+    
     .py-8 {
       padding-top: 2rem;
       padding-bottom: 2rem;
     }
-
+    
     .px-4 {
       padding-left: 1rem;
       padding-right: 1rem;
     }
-
-    .p-4 {
-      padding: 1rem;
-    }
-
-    .p-6 {
-      padding: 1.5rem;
-    }
-
-    .p-8 {
-      padding: 2rem;
-    }
-
-    /* Colores */
-    .bg-blue-500 {
-      background-color: #3b82f6;
-    }
-
-    .bg-green-500 {
-      background-color: #10b981;
-    }
-
-    .bg-gray-200 {
-      background-color: #e5e7eb;
-    }
-
-    .text-gray-600 {
-      color: #4b5563;
-    }
-
-    .text-gray-800 {
-      color: #1f2937;
-    }
-
-    .text-red-500 {
-      color: #ef4444;
-    }
-
-    .text-blue-500 {
-      color: #3b82f6;
-    }
-
-    /* Animaciones */
+    
     .animate-fade-in {
       animation: fadeIn 0.5s ease-in-out;
     }
-
+    
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
-    /* Efectos */
+    
     .hover-scale-105:hover {
       transform: scale(1.05);
     }
-
+    
     .transition-all {
       transition-property: all;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       transition-duration: 150ms;
     }
-
-    .duration-500 {
-      transition-duration: 500ms;
-    }
-
-    /* Grid */
+    
     .grid {
       display: grid;
     }
-
+    
     .gap-3 {
       gap: 0.75rem;
     }
-
-    /* Background gradient */
+    
     .gradient-bg {
       background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
     }
-
-    /* Iconos */
-    .icon {
-      width: 1rem;
-      height: 1rem;
-      display: inline-block;
-      vertical-align: middle;
-    }
-
-    /* Text sizes */
-    .text-sm {
-      font-size: 0.875rem;
-    }
-
-    .text-lg {
-      font-size: 1.125rem;
-    }
-
-    .text-xl {
-      font-size: 1.25rem;
-    }
-
-    .text-3xl {
-      font-size: 1.875rem;
-    }
-
-    .text-4xl {
-      font-size: 2.25rem;
-    }
-
-    /* Utilities */
-    .justify-between {
-      justify-content: space-between;
-    }
-
-    .justify-start {
-      justify-content: flex-start;
-    }
-
-    .text-left {
-      text-align: left;
-    }
-
-    .h-auto {
-      height: auto;
-    }
-
-    .overflow-hidden {
-      overflow: hidden;
+    
+    .duration-500 {
+      transition-duration: 500ms;
     }
   </style>
 </head>
@@ -284,6 +192,12 @@
   <div id="app"></div>
 
   <script>
+    // Configuración del Google Form
+    const GOOGLE_FORM_ID = "1FAIpQLSdF8lhsZyndZlhtcg44KZwMIr_uOmc5dNFZNBL9VPaUpzXUvA";
+    const GOOGLE_FORM_ENTRY_ECONOMICO = "entry.139743159";
+    const GOOGLE_FORM_ENTRY_SOCIAL = "entry.700688614";
+    const GOOGLE_FORM_ENTRY_IDEOLOGIA = "entry.12401072";
+
     // Datos de las preguntas
     const questions = [
       {
@@ -388,7 +302,21 @@
       }
     ];
 
-    // Aplicación
+    // Función para enviar resultados a Google Forms
+    function submitToGoogleForms(economicScore, socialScore, ideology) {
+      const formUrl = `https://docs.google.com/forms/d/e/${GOOGLE_FORM_ID}/formResponse?` +
+        `&${GOOGLE_FORM_ENTRY_ECONOMICO}=${encodeURIComponent(economicScore.toFixed(2))}` +
+        `&${GOOGLE_FORM_ENTRY_SOCIAL}=${encodeURIComponent(socialScore.toFixed(2))}` +
+        `&${GOOGLE_FORM_ENTRY_IDEOLOGIA}=${encodeURIComponent(ideology)}` +
+        `&submit=Submit`;
+      
+      const img = new Image();
+      img.src = formUrl;
+      img.style.display = 'none';
+      document.body.appendChild(img);
+    }
+
+    // Aplicación principal
     document.addEventListener('DOMContentLoaded', () => {
       const app = document.getElementById('app');
       let state = {
@@ -519,7 +447,7 @@
         let socialScore = 0;
 
         // Economic questions (1, 2, 3, 10)
-        economicScore += (state.answers[1] || 0) * -1; // Invertido para alineación derecha
+        economicScore += (state.answers[1] || 0) * -1;
         economicScore += (state.answers[2] || 0);
         economicScore += (state.answers[3] || 0) * -1;
         economicScore += (state.answers[10] || 0) * -1;
@@ -530,11 +458,11 @@
         socialScore += (state.answers[6] || 0);
         socialScore += (state.answers[7] || 0);
         socialScore += (state.answers[8] || 0);
-        socialScore += (state.answers[9] || 0) * -1; // Invertido
+        socialScore += (state.answers[9] || 0) * -1;
 
         // Normalizar a escala -10 a 10
-        economicScore = (economicScore / 8) * 10;
-        socialScore = (socialScore / 12) * 10;
+        economicScore = Math.max(-10, Math.min(10, (economicScore / 8) * 10));
+        socialScore = Math.max(-10, Math.min(10, (socialScore / 12) * 10));
 
         return { economicScore, socialScore };
       }
@@ -550,6 +478,8 @@
       function renderResults() {
         const { economicScore, socialScore } = calculateResults();
         const ideology = getIdeology(economicScore, socialScore);
+        
+        submitToGoogleForms(economicScore, socialScore, ideology);
 
         app.innerHTML = `
           <div class="min-h-screen gradient-bg py-8 px-4">
@@ -562,6 +492,8 @@
                     <h3 class="text-xl font-title">Tu Ideología: ${ideology}</h3>
                     <p class="text-gray-600 font-body">
                       Basado en tus respuestas, tus tendencias políticas se alinean con una perspectiva ${ideology.toLowerCase()}.
+                      <br><br>
+                      <span class="text-sm">Los resultados han sido registrados anónimamente para fines estadísticos.</span>
                     </p>
                   </div>
 
